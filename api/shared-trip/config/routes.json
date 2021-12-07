@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/shared-trips",
+      "handler": "shared-trip.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shared-trips/count",
+      "handler": "shared-trip.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/shared-trips/:id",
+      "handler": "shared-trip.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/shared-trips",
+      "handler": "shared-trip.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/shared-trips/:id",
+      "handler": "shared-trip.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/shared-trips/:id",
+      "handler": "shared-trip.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

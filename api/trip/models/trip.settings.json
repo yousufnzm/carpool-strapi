@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "name": "Trip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "shared": {
+      "type": "boolean"
+    },
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "trip_id": {
+      "type": "uid"
+    }
+  }
+}

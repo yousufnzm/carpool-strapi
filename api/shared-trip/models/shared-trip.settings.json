@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shared_trips",
+  "info": {
+    "name": "SharedTrip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trip_id": {
+      "type": "uid"
+    },
+    "created": {
+      "type": "datetime"
+    },
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "joinee": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "trip": {
+      "model": "trip"
+    }
+  }
+}
